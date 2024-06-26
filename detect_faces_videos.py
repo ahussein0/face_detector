@@ -56,7 +56,6 @@ while True:
 
         box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
         (startX, startY, endX, endY) = box.astype("int")
-
         # draw the bounding box of the face along with the associated
         # probability
         text = "{:.2f}%".format(confidence * 100)
